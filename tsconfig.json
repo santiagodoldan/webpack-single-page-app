@@ -1,0 +1,21 @@
+{
+  "awesomeTypescriptLoaderOptions": {
+    "errorsAsWarnings": true
+  },
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "lib": ["es2016", "dom"],
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "strictNullChecks": false,
+    "sourceMap": true,
+    "outDir": "dist",
+    "baseUrl": ".",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+  },
+  "include": [
+    "./app/**/*"
+  ]
+}
