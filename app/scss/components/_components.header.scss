@@ -1,0 +1,33 @@
+.c-header {
+  height: 60px;
+  padding-top: 20px;
+  border-bottom: 1px solid black;
+}
+
+.c-header__title,
+.c-header__logo {
+  display: inline-block;
+}
+
+.c-header__logo {
+  color: $global-color-green;
+  margin-right: 5px;
+}
+
+.c-header__title {
+  font-weight: 900;
+}
+
+.c-header__user {
+  float: right;
+}
+
+.c-header__user__element {
+  font-size: 14px;
+  display: inline-block;
+}
+
+.c-header__user__element--big {
+  font-size: 20px;
+  color: $global-color-green;
+}

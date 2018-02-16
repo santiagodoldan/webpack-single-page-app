@@ -1,8 +1,7 @@
 // SETTINGS
-//@import "settings/settings.config";
+@import "settings/settings.config";
 @import "node_modules/inuitcss/settings/settings.core";
-//@import "settings/settings.global";
-//@import "settings/settings.colors";
+@import "settings/settings.colors";
 
 // TOOLS
 @import "node_modules/inuitcss/tools/tools.font-size";
@@ -12,12 +11,13 @@
 // GENERIC
 @import "node_modules/inuitcss/generic/generic.box-sizing";
 @import "node_modules/inuitcss/generic/generic.normalize";
+@import "generic/generic.reset";
 @import "node_modules/inuitcss/generic/generic.shared";
 
 // ELEMENTS
-//@import "elements/elements.form";
-//@import "elements/elements.page";
 @import "node_modules/inuitcss/elements/elements.headings";
+@import "elements/elements.links";
+@import "elements/elements.page";
 
 // OBJECTS
 @import "node_modules/inuitcss/objects/objects.layout";
@@ -30,32 +30,19 @@
 @import "node_modules/inuitcss/objects/objects.table";
 
 // COMPONENTS
-//@import "components/components.alerts";
-//@import "components/components.box";
-//@import "components/components.button";
-//@import "components/components.datepicker";
-//@import "components/components.dropdown";
-//@import "components/components.event";
-//@import "components/components.form";
-//@import "components/components.header";
-//@import "components/components.infinite-scrolling";
-//@import "components/components.invoice";
-//@import "components/components.loader";
-//@import "components/components.markdown";
-//@import "components/components.membership";
-//@import "components/components.menu";
-//@import "components/components.profile";
-//@import "components/components.table";
-//@import "components/components.toggle";
-//@import "components/components.searchbar";
-//@import "components/components.spinner";
-//@import "components/components.structure";
+@import "components/components.box";
+@import "components/components.button";
+@import "components/components.breadcrumb";
+@import "components/components.form";
+@import "components/components.footer";
+@import "components/components.header";
+@import "components/components.sub-header";
+@import "components/components.table";
+@import "components/components.structure";
 
 // UTILITIES
-//@import "utilities/utilities.alignments";
-//@import "utilities/utilities.colors";
-//@import "utilities/utilities.positions";
-//@import "utilities/utilities.sizes";
+@import "utilities/utilities.alignments";
+@import "utilities/utilities.colors";
 @import "node_modules/inuitcss/utilities/utilities.widths";
 @import "node_modules/inuitcss/utilities/utilities.headings";
 @import "node_modules/inuitcss/utilities/utilities.spacings";

@@ -1,0 +1,52 @@
+.c-sub-header {
+  height: 130px;
+  background-color: $global-color-grey;
+  border-top: 1px solid $global-color-darkgrey;
+}
+
+.c-sub-header__link {
+  position: relative;
+  margin: 45px 30px 0 0;
+  display: inline-block;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.c-sub-header__link--right {
+  float: right;
+  margin-right: 0;
+  margin-left: 30px;
+}
+
+.c-sub-header__link__icon {
+  font-size: 40px !important;
+  color: $global-color-darkgrey;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.c-sub-header__link__icon--green {
+  color: $global-color-green;
+}
+
+.c-sub-header__link__info {
+  position: relative;
+  top: -2px;
+  display: inline-block;
+}
+
+.c-sub-header__link__title {
+  font-size: 14px;
+  color: $global-color-darkgrey;
+}
+
+.c-sub-header__link__subtitle {
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.c-sub-header__link__subtitle--green {
+  color: $global-color-green;
+}

@@ -1,0 +1,51 @@
+.c-box {
+  border: 1px solid $global-color-darkgrey;
+  border-radius: 5px;
+  margin: 60px 0;
+}
+
+.c-box__body,
+.c-box__header {
+  padding: 15px;
+}
+
+.c-box__body--with-img {
+
+}
+
+.c-box__header {
+  background-color: $global-color-grey;
+  border-radius: 5px 5px 0 0;
+  border-bottom: 1px solid $global-color-darkgrey;
+  height: 54px;
+}
+
+.c-box__header__title {
+  float: left;
+  font-weight: 900;
+}
+
+.c-box__header__toggle {
+  float: right;
+  color: $global-color-green;
+  font-size: 14px;
+  padding-top: 2px;
+}
+
+.c-box__header__toggle--close::after {
+  position: relative;
+  top: 1px;
+  content: "\2191";
+}
+
+.c-box__body__img {
+  font-size: 100px !important;
+  color: $global-color-darkgrey;
+  float: left;
+  padding: 0 20px 20px 0;
+}
+
+.c-box__body__text {
+  padding: 0;
+  margin: 0;
+}

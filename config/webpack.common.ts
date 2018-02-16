@@ -11,6 +11,7 @@ const BUILD_PATH = path.resolve(ROOT_PATH, "dist")
 const config: webpack.Configuration = {
   entry: [
     "./app/scss/main.scss",
+    "./app/index.js",
   ],
   output: {
     path: BUILD_PATH,
@@ -22,12 +23,25 @@ const config: webpack.Configuration = {
   },
   module: {
     rules: [
-      { test: /\.scss$/,
+      {
+        test: /\.less$/,
+        use: "less-loader",
+      },
+      {
+        test: /\.scss$/,
         use: ExtractTextPlugin.extract({
           fallback: "style-loader",
           use: ["css-loader", "sass-loader"],
           publicPath: "/",
         }),
+      },
+      {
+        test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        loader: "url-loader?limit=10000&mimetype=application/font-woff",
+      },
+      {
+        test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        loader: "file-loader",
       },
     ],
   },

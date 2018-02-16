@@ -1,0 +1,40 @@
+.c-btn {
+  display: inline-block;
+  vertical-align: middle;
+  font: inherit;
+  text-align: center;
+  margin: 0;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: $inuit-global-spacing-unit-tiny;
+  text-decoration: none;
+  outline: 0;
+  border: 2px solid $global-color-darkgrey;
+  background-color: $global-color-darkgrey;
+  color: white;
+
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+}
+
+.c-btn--success {
+  border: 2px solid $global-color-green;
+  background-color: $global-color-green;
+  color: white;
+}
+
+.c-btn--tiny {
+  padding: 0 $inuit-global-spacing-unit-tiny;
+}
+
+.c-btn--small {
+  padding: $inuit-global-spacing-unit-tiny $inuit-global-spacing-unit-small;
+}
+
+.c-btn--large {
+  padding: $inuit-global-spacing-unit-small $inuit-global-spacing-unit-large;
+}

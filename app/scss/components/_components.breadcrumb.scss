@@ -1,0 +1,31 @@
+.c-breadcrumb {
+  height: 40px;
+  padding: 9px 0;
+}
+
+.c-breadcrumb__arrow,
+.c-breadcrumb__item {
+  float: left;
+  font-size: 14px;
+  line-height: 25px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.c-breadcrumb__item {
+  cursor: pointer;
+  color: $global-color-green;
+}
+
+.c-breadcrumb__item--home {
+  font-size: 20px;
+}
+
+.c-breadcrumb__item--current {
+  cursor: auto;
+  color: black;
+}
+
+.c-breadcrumb__arrow {
+  color: $global-color-grey;
+}

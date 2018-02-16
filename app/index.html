@@ -7,6 +7,354 @@
   </head>
 
   <body>
-    <div id="app"></div>
+    <div class="c-header">
+      <div class="c-container">
+        <div class="c-header__logo">
+          <i class="fa fa-bars"></i>
+        </div>
+
+        <div class="c-header__title">Dummy App</div>
+
+        <div class="c-header__user">
+          <div class="c-header__user__element c-header__user__element--big">
+            <i class="fa fa-user"></i>
+          </div>
+          <div class="c-header__user__element">Jhon</div>
+          <div class="c-header__user__element">|</div>
+          <div class="c-header__user__element">
+            <a href="">Log out</a>
+          </div>
+        </div>
+      </div>
+    </div> <!-- c-header -->
+
+    <div class="c-breadcrumb">
+      <div class="c-container">
+        <a href="" class="c-breadcrumb__item c-breadcrumb__item--home">
+          <i class="fa fa-home"></i>
+        </a>
+
+        <div class="c-breadcrumb__arrow">
+          <i class="fa fa-chevron-right"></i>
+        </div>
+
+        <a class="c-breadcrumb__item" href="">Page 1</a>
+
+        <div class="c-breadcrumb__arrow">
+          <i class="fa fa-chevron-right"></i>
+        </div>
+
+        <a class="c-breadcrumb__item" href="">Breadcrumb</a>
+
+        <div class="c-breadcrumb__arrow">
+          <i class="fa fa-chevron-right"></i>
+        </div>
+
+        <div class="c-breadcrumb__item c-breadcrumb__item--current">Current Page</div>
+      </div>
+    </div> <!-- c-breadcrumb -->
+
+    <div class="c-sub-header">
+      <div class="c-container">
+        <a href="" class="c-sub-header__link">
+          <i class="c-sub-header__link__icon fa fa-puzzle-piece"></i>
+
+          <div class="c-sub-header__link__info">
+            <div class="c-sub-header__link__title">Sector</div>
+            <div class="c-sub-header__link__subtitle">Sports</div>
+          </div>
+        </a>
+
+        <a href="" class="c-sub-header__link">
+          <i class="c-sub-header__link__icon fa fa-futbol-o"></i>
+
+          <div class="c-sub-header__link__info">
+            <div class="c-sub-header__link__title">Sport Type</div>
+            <div class="c-sub-header__link__subtitle">Bycicles</div>
+          </div>
+        </a>
+
+        <a href="" class="c-sub-header__link">
+          <i class="c-sub-header__link__icon fa fa-bicycle"></i>
+
+          <div class="c-sub-header__link__info">
+            <div class="c-sub-header__link__title">Mode</div>
+            <div class="c-sub-header__link__subtitle">Mountain Cross</div>
+          </div>
+        </a>
+
+        <a href="" class="c-sub-header__link c-sub-header__link--right">
+          <i class="c-sub-header__link__icon c-sub-header__link__icon--green fa fa-recycle"></i>
+
+          <div class="c-sub-header__link__info">
+            <div class="c-sub-header__link__title">Responsability</div>
+            <div class="c-sub-header__link__subtitle c-sub-header__link__subtitle--green">Be Green!</div>
+          </div>
+        </a>
+      </div>
+    </div> <!-- c-sub-header -->
+
+    <div class="c-container">
+      <div class="c-box">
+        <div class="c-box__header">
+          <div class="c-box__header__title">
+            Help
+          </div>
+
+          <a href="" class="c-box__header__toggle c-box__header__toggle--close">
+            close
+          </a>
+        </div>
+
+        <div class="c-box__body c-box__body--with-img">
+          <i class="c-box__body__img fa fa-life-ring"></i>
+
+          <p class="c-box__body__text">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.
+            <br />
+            <br />
+            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+            <br />
+            <br />
+            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          </p>
+        </div>
+      </div>
+
+      <div>
+        <h2>User registration</h2>
+
+        <form class="c-form">
+          <fieldset>
+            <div class="o-layout">
+              <div class="o-layout__item u-1/2">
+                <div class="u-6/7">
+                  <label class="c-form__group c-form__group--with-info" for="full_name">
+                    <span class="c-form__group__label">Full name</span>
+                    <input class="c-form__group__input" type="text" name="full_name" />
+                    <span class="c-form__group__info">
+                      Instructions to populate this field
+                    </span>
+                  </label>
+
+                  <label class="c-form__group c-form__group--with-info" for="email">
+                    <span class="c-form__group__label">Email</span>
+                    <input class="c-form__group__input" type="email" name="email" />
+                    <span class="c-form__group__info">
+                      Instructions to populate this field
+                    </span>
+                  </label>
+
+                  <label class="c-form__group c-form__group--with-info c-form__group--optional" for="city">
+                    <span class="c-form__group__label">City</span>
+                    <input class="c-form__group__input" type="text" name="city" />
+                    <span class="c-form__group__info">
+                      Instructions to populate this field
+                    </span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="o-layout__item u-1/2">
+                <span class="c-form__group" for="email">
+                  <span class="c-form__group__label">Ride in groups</span>
+
+                  <label class="c-form__radio">
+                    <input class="c-form__radio__input" type="radio" name="ride_in_groups" value="always">
+
+                    <span class="c-form__radio__text">Always</span>
+                  </label>
+
+                  <label class="c-form__radio">
+                    <input class="c-form__radio__input" type="radio" name="ride_in_groups" value="sometimes">
+
+                    <span class="c-form__radio__text">Sometimes</span>
+                  </label>
+
+                  <label class="c-form__radio">
+                    <input class="c-form__radio__input" type="radio" name="ride_in_groups" value="never">
+
+                    <span class="c-form__radio__text">Never</span>
+                  </label>
+                </span>
+
+                <span class="c-form__group c-form__group--with-info u-margin-bottom-small" for="email">
+                  <span class="c-form__group__label">Days of the week</span>
+
+                  <label class="c-form__checkbox">
+                    <input class="c-form__checkbox__input" type="checkbox" name="ride_in_groups" value="always">
+
+                    <span class="c-form__checkbox__text">Sun</span>
+                  </label>
+
+                  <label class="c-form__checkbox">
+                    <input class="c-form__checkbox__input" type="checkbox" name="ride_in_groups" value="always">
+
+                    <span class="c-form__checkbox__text">Mon</span>
+                  </label>
+
+                  <label class="c-form__checkbox">
+                    <input class="c-form__checkbox__input" type="checkbox" name="ride_in_groups" value="always">
+
+                    <span class="c-form__checkbox__text">Tue</span>
+                  </label>
+
+                  <label class="c-form__checkbox">
+                    <input class="c-form__checkbox__input" type="checkbox" name="ride_in_groups" value="always">
+
+                    <span class="c-form__checkbox__text">Wed</span>
+                  </label>
+
+                  <label class="c-form__checkbox">
+                    <input class="c-form__checkbox__input" type="checkbox" name="ride_in_groups" value="always">
+
+                    <span class="c-form__checkbox__text">Thu</span>
+                  </label>
+
+                  <label class="c-form__checkbox">
+                    <input class="c-form__checkbox__input" type="checkbox" name="ride_in_groups" value="always">
+
+                    <span class="c-form__checkbox__text">Fri</span>
+                  </label>
+
+                  <label class="c-form__checkbox">
+                    <input class="c-form__checkbox__input" type="checkbox" name="ride_in_groups" value="always">
+
+                    <span class="c-form__checkbox__text">Sat</span>
+                  </label>
+                </span>
+
+                <div class="u-margin-top-small u-float--right">
+                  <button class="c-btn c-btn--small">Cancel</button>
+                  <button class="c-btn c-btn--small c-btn--success u-margin-left-tiny" type="submit">Save</button>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+
+      <div class="u-margin-bottom-huge u-margin-bottom-large">
+        <h2>Bikers</h2>
+
+        <table class="c-table">
+          <thead>
+            <tr class="c-table__row c-table__header">
+              <th class="c-table__header__col">Full Name</th>
+              <th class="c-table__header__col">E-mail</th>
+              <th class="c-table__header__col">City</th>
+              <th class="c-table__header__col">Ride in group</th>
+              <th class="c-table__header__col">Days of the week</th>
+              <th class="c-table__header__col">Registration day</th>
+              <th class="c-table__header__col"></th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr class="c-table__row c-table__row--striped">
+              <td class="c-table__body__col">James Isaac Neutron</td>
+              <td class="c-table__body__col">neutron@example.com</td>
+              <td class="c-table__body__col">City</td>
+              <td class="c-table__body__col">Always</td>
+              <td class="c-table__body__col">Every day</td>
+              <td class="c-table__body__col">
+                13/08/2018
+
+                <span class="u-text--darkgrey">
+                  11:29AM
+                </span>
+              </td>
+              <td class="c-table__body__col c-table__body__col--hidden">
+                <i class="fa fa-trash"></i>
+              </td>
+            </tr>
+
+            <tr class="c-table__row c-table__row--striped">
+              <td class="c-table__body__col">Carl Wheezer</td>
+              <td class="c-table__body__col">carl@example.com</td>
+              <td class="c-table__body__col">City</td>
+              <td class="c-table__body__col">Sometimes</td>
+              <td class="c-table__body__col">Week days</td>
+              <td class="c-table__body__col">
+                19/04/2019
+
+                <span class="u-text--darkgrey">
+                  00:29AM
+                </span>
+              </td>
+              <td class="c-table__body__col c-table__body__col--hidden">
+                <i class="fa fa-trash"></i>
+              </td>
+            </tr>
+
+            <tr class="c-table__row c-table__row--striped">
+              <td class="c-table__body__col">Carl Wheezer</td>
+              <td class="c-table__body__col">carl@example.com</td>
+              <td class="c-table__body__col">City</td>
+              <td class="c-table__body__col">Sometimes</td>
+              <td class="c-table__body__col">Week days</td>
+              <td class="c-table__body__col">
+                19/04/2019
+
+                <span class="u-text--darkgrey">
+                  00:29AM
+                </span>
+              </td>
+              <td class="c-table__body__col c-table__body__col--hidden">
+                <i class="fa fa-trash"></i>
+              </td>
+            </tr>
+
+            <tr class="c-table__row c-table__row--striped">
+              <td class="c-table__body__col">Carl Wheezer</td>
+              <td class="c-table__body__col">carl@example.com</td>
+              <td class="c-table__body__col">City</td>
+              <td class="c-table__body__col">Sometimes</td>
+              <td class="c-table__body__col">Week days</td>
+              <td class="c-table__body__col">
+                19/04/2019
+
+                <span class="u-text--darkgrey">
+                  00:29AM
+                </span>
+              </td>
+              <td class="c-table__body__col c-table__body__col--hidden">
+                <i class="fa fa-trash"></i>
+              </td>
+            </tr>
+
+            <tr class="c-table__row c-table__row--striped">
+              <td class="c-table__body__col">Carl Wheezer</td>
+              <td class="c-table__body__col">carl@example.com</td>
+              <td class="c-table__body__col">City</td>
+              <td class="c-table__body__col">Sometimes</td>
+              <td class="c-table__body__col">Week days</td>
+              <td class="c-table__body__col">
+                19/04/2019
+
+                <span class="u-text--darkgrey">
+                  00:29AM
+                </span>
+              </td>
+              <td class="c-table__body__col c-table__body__col--hidden">
+                <i class="fa fa-trash"></i>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="c-footer">
+      <div class="c-container">
+        <div class="c-footer__company-name">
+          Dummy App
+        </div>
+
+        <div class="c-footer__web-version">
+          Version 1.14
+        </div>
+      </div>
+    </div> <!-- c-footer -->
   </body>
 </html>

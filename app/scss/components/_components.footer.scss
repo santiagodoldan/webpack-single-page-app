@@ -1,0 +1,17 @@
+.c-footer {
+  border-top: 1px solid $global-color-black;
+  margin-top: 50px;
+  height: 150px;
+  padding-top: 10px;
+  color: $global-color-darkgrey;
+  font-size: 14px;
+}
+
+.c-footer__company-name {
+  float: left;
+}
+
+.c-footer__web-version {
+  float: right;
+  font-weight: 600;
+}
