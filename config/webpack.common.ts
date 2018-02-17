@@ -23,10 +23,8 @@ const config: webpack.Configuration = {
   },
   module: {
     rules: [
-      {
-        test: /\.less$/,
-        use: "less-loader",
-      },
+      { test: /\.tsx?$/, loader: "awesome-typescript-loader" },
+      { test: /\.less$/, use: "less-loader" },
       {
         test: /\.scss$/,
         use: ExtractTextPlugin.extract({

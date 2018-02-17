@@ -5,7 +5,7 @@
   "compilerOptions": {
     "module": "commonjs",
     "target": "es5",
-    "lib": ["es2016", "dom"],
+    "lib": ["es2016", "dom", "dom.iterable"],
     "noImplicitAny": true,
     "noUnusedLocals": true,
     "strictNullChecks": false,
