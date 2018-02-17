@@ -124,20 +124,20 @@
       <div>
         <h2>User registration</h2>
 
-        <form class="c-form">
+        <form class="c-form c-biker-form">
           <fieldset>
             <div class="o-layout">
               <div class="o-layout__item u-1/2">
                 <div class="u-6/7">
                   <label class="c-form__group c-form__group--with-info" for="full_name">
                     <span class="c-form__group__label">Full name</span>
-                    <input class="c-form__group__input" type="text" name="full_name" />
+                    <input class="c-form__group__input" type="text" name="full_name" required="required" />
                     <span class="c-form__group__info">
                       Instructions to populate this field
                     </span>
                   </label>
 
-                  <label class="c-form__group c-form__group--with-info" for="email">
+                  <label class="c-form__group c-form__group--with-info" for="email" required="required">
                     <span class="c-form__group__label">Email</span>
                     <input class="c-form__group__input" type="email" name="email" />
                     <span class="c-form__group__info">
@@ -160,19 +160,19 @@
                   <span class="c-form__group__label">Ride in groups</span>
 
                   <label class="c-form__radio">
-                    <input class="c-form__radio__input" type="radio" name="ride_in_groups" value="always">
+                    <input class="c-form__radio__input" type="radio" name="ride_in_groups" value="Always" required="required">
 
                     <span class="c-form__radio__text">Always</span>
                   </label>
 
                   <label class="c-form__radio">
-                    <input class="c-form__radio__input" type="radio" name="ride_in_groups" value="sometimes">
+                    <input class="c-form__radio__input" type="radio" name="ride_in_groups" value="Sometimes" required="required">
 
                     <span class="c-form__radio__text">Sometimes</span>
                   </label>
 
                   <label class="c-form__radio">
-                    <input class="c-form__radio__input" type="radio" name="ride_in_groups" value="never">
+                    <input class="c-form__radio__input" type="radio" name="ride_in_groups" value="Never" required="required">
 
                     <span class="c-form__radio__text">Never</span>
                   </label>
@@ -182,51 +182,51 @@
                   <span class="c-form__group__label">Days of the week</span>
 
                   <label class="c-form__checkbox">
-                    <input class="c-form__checkbox__input" type="checkbox" name="ride_in_groups" value="always">
+                    <input class="c-form__checkbox__input" type="checkbox" name="frequency" value="0">
 
                     <span class="c-form__checkbox__text">Sun</span>
                   </label>
 
                   <label class="c-form__checkbox">
-                    <input class="c-form__checkbox__input" type="checkbox" name="ride_in_groups" value="always">
+                    <input class="c-form__checkbox__input" type="checkbox" name="frequency" value="1">
 
                     <span class="c-form__checkbox__text">Mon</span>
                   </label>
 
                   <label class="c-form__checkbox">
-                    <input class="c-form__checkbox__input" type="checkbox" name="ride_in_groups" value="always">
+                    <input class="c-form__checkbox__input" type="checkbox" name="frequency" value="2">
 
                     <span class="c-form__checkbox__text">Tue</span>
                   </label>
 
                   <label class="c-form__checkbox">
-                    <input class="c-form__checkbox__input" type="checkbox" name="ride_in_groups" value="always">
+                    <input class="c-form__checkbox__input" type="checkbox" name="frequency" value="3">
 
                     <span class="c-form__checkbox__text">Wed</span>
                   </label>
 
                   <label class="c-form__checkbox">
-                    <input class="c-form__checkbox__input" type="checkbox" name="ride_in_groups" value="always">
+                    <input class="c-form__checkbox__input" type="checkbox" name="frequency" value="4">
 
                     <span class="c-form__checkbox__text">Thu</span>
                   </label>
 
                   <label class="c-form__checkbox">
-                    <input class="c-form__checkbox__input" type="checkbox" name="ride_in_groups" value="always">
+                    <input class="c-form__checkbox__input" type="checkbox" name="frequency" value="5">
 
                     <span class="c-form__checkbox__text">Fri</span>
                   </label>
 
                   <label class="c-form__checkbox">
-                    <input class="c-form__checkbox__input" type="checkbox" name="ride_in_groups" value="always">
+                    <input class="c-form__checkbox__input" type="checkbox" name="frequency" value="6">
 
                     <span class="c-form__checkbox__text">Sat</span>
                   </label>
                 </span>
 
                 <div class="u-margin-top-small u-float--right">
-                  <button class="c-btn c-btn--small">Cancel</button>
-                  <button class="c-btn c-btn--small c-btn--success u-margin-left-tiny" type="submit">Save</button>
+                  <button class="c-btn c-btn--small c-biker-form__cancel">Cancel</button>
+                  <button class="c-btn c-btn--small c-btn--success u-margin-left-tiny c-biker-form__save" type="submit">Save</button>
                 </div>
               </div>
             </div>

@@ -57,7 +57,7 @@ export class BikerComponent extends BaseComponent {
     const container = this.node.getElementsByClassName(className)[0] as HTMLElement
 
     if (container) {
-      container.textContent = value
+      container.textContent = value || "n/a"
     }
   }
 

@@ -5,8 +5,8 @@ export enum RideInGroups {
 }
 
 export interface IModel {
-  id: string
-  attrs: any
+  id?: string
+  attrs?: any
 }
 
 export interface IBiker extends IModel {
