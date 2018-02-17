@@ -12,6 +12,8 @@ export class AccordionComponent extends BaseComponent {
 
   // override
   public init(): void {
+    super.init()
+
     this.button = this.node.getElementsByClassName("c-accordion__header__toggle")[0] as HTMLAnchorElement
     this.body   = this.node.getElementsByClassName("c-accordion__body")[0] as HTMLElement
 
@@ -48,6 +50,4 @@ export class AccordionComponent extends BaseComponent {
 
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  AccordionComponent.register()
-})
+BaseComponent.add(AccordionComponent)

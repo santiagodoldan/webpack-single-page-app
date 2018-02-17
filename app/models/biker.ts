@@ -3,6 +3,9 @@ import { Base } from "./base"
 
 export class Biker extends Base implements IBiker {
 
+  public static namespace: string = "biker"
+  public namespace: string = "biker"
+
   public name: string
   public email: string
   public city: string
@@ -11,14 +14,14 @@ export class Biker extends Base implements IBiker {
   public createdAt: Date
 
   public constructor(attrs: IBiker) {
-    super()
+    super(attrs)
 
     this.name         = attrs.name
     this.email        = attrs.email
     this.city         = attrs.city
     this.rideInGroups = attrs.rideInGroups
     this.frequency    = attrs.frequency
-    this.createdAt    = attrs.createdAt
+    this.createdAt    = new Date(attrs.createdAt)
   }
 
   public get frequencyText(): string {

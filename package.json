@@ -30,7 +30,7 @@
     "style-loader": "^0.20.1",
     "ts-node": "^4.1.0",
     "tslint": "^5.9.1",
-    "typescript": "^2.8.0-dev.20180216",
+    "typescript": "^2.7.1",
     "url-loader": "^0.5.7",
     "webpack": "^3.11.0",
     "webpack-dev-server": "^2.11.1",

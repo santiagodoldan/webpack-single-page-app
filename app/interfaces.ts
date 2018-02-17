@@ -4,7 +4,12 @@ export enum RideInGroups {
   Always = "Always",
 }
 
-export interface IBiker {
+export interface IModel {
+  id: string
+  attrs: any
+}
+
+export interface IBiker extends IModel {
   name: string
   email: string
   city: string

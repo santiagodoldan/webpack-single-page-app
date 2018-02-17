@@ -1,9 +1,11 @@
-import { IBiker } from "../interfaces"
+import { Events } from "../consts"
+import { Observable } from "../lib/observable"
+import { Biker } from "../models/biker"
 import { BaseComponent } from "./base_component"
 
 export class BikerComponent extends BaseComponent {
 
-  public static loadAndInit(container: HTMLElement, biker: IBiker): BikerComponent {
+  public static loadAndInit(container: HTMLElement, biker: Biker): BikerComponent {
     const node      = this.appendTemplateToById(container, "biker-row-template")
     const component = new this(node, biker)
 
@@ -17,15 +19,17 @@ export class BikerComponent extends BaseComponent {
     return "c-biker"
   }
 
-  public biker: IBiker
+  public biker: Biker
 
-  public constructor(node: HTMLElement, biker: IBiker) {
+  public constructor(node: HTMLElement, biker: Biker) {
     super(node)
 
     this.biker = biker
   }
 
   public init(): void {
+    super.init()
+
     this.populateData()
 
     const button = this.node.getElementsByClassName("c-biker__trash")[0]
@@ -33,7 +37,9 @@ export class BikerComponent extends BaseComponent {
     button.addEventListener("click", (event) => {
       event.preventDefault()
 
-      console.info(this.biker)
+      this.biker.destroy()
+
+      Observable.emit(Events.BikerRemoved, this.biker)
     })
   }
 
