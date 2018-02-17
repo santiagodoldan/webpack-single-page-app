@@ -237,7 +237,7 @@
       <div class="u-margin-bottom-huge u-margin-bottom-large">
         <h2>Bikers</h2>
 
-        <table class="c-table">
+        <table class="c-table c-biker-list">
           <thead>
             <tr class="c-table__row c-table__header">
               <th class="c-table__header__col">Full Name</th>
@@ -250,96 +250,23 @@
             </tr>
           </thead>
 
-          <tbody>
-            <tr class="c-table__row c-table__row--striped">
-              <td class="c-table__body__col">James Isaac Neutron</td>
-              <td class="c-table__body__col">neutron@example.com</td>
-              <td class="c-table__body__col">City</td>
-              <td class="c-table__body__col">Always</td>
-              <td class="c-table__body__col">Every day</td>
-              <td class="c-table__body__col">
-                13/08/2018
-
-                <span class="u-text--darkgrey">
-                  11:29AM
-                </span>
-              </td>
-              <td class="c-table__body__col c-table__body__col--hidden">
-                <i class="fa fa-trash"></i>
-              </td>
-            </tr>
-
-            <tr class="c-table__row c-table__row--striped">
-              <td class="c-table__body__col">Carl Wheezer</td>
-              <td class="c-table__body__col">carl@example.com</td>
-              <td class="c-table__body__col">City</td>
-              <td class="c-table__body__col">Sometimes</td>
-              <td class="c-table__body__col">Week days</td>
-              <td class="c-table__body__col">
-                19/04/2019
-
-                <span class="u-text--darkgrey">
-                  00:29AM
-                </span>
-              </td>
-              <td class="c-table__body__col c-table__body__col--hidden">
-                <i class="fa fa-trash"></i>
-              </td>
-            </tr>
-
-            <tr class="c-table__row c-table__row--striped">
-              <td class="c-table__body__col">Carl Wheezer</td>
-              <td class="c-table__body__col">carl@example.com</td>
-              <td class="c-table__body__col">City</td>
-              <td class="c-table__body__col">Sometimes</td>
-              <td class="c-table__body__col">Week days</td>
-              <td class="c-table__body__col">
-                19/04/2019
-
-                <span class="u-text--darkgrey">
-                  00:29AM
-                </span>
-              </td>
-              <td class="c-table__body__col c-table__body__col--hidden">
-                <i class="fa fa-trash"></i>
-              </td>
-            </tr>
-
-            <tr class="c-table__row c-table__row--striped">
-              <td class="c-table__body__col">Carl Wheezer</td>
-              <td class="c-table__body__col">carl@example.com</td>
-              <td class="c-table__body__col">City</td>
-              <td class="c-table__body__col">Sometimes</td>
-              <td class="c-table__body__col">Week days</td>
-              <td class="c-table__body__col">
-                19/04/2019
-
-                <span class="u-text--darkgrey">
-                  00:29AM
-                </span>
-              </td>
-              <td class="c-table__body__col c-table__body__col--hidden">
-                <i class="fa fa-trash"></i>
-              </td>
-            </tr>
-
-            <tr class="c-table__row c-table__row--striped">
-              <td class="c-table__body__col">Carl Wheezer</td>
-              <td class="c-table__body__col">carl@example.com</td>
-              <td class="c-table__body__col">City</td>
-              <td class="c-table__body__col">Sometimes</td>
-              <td class="c-table__body__col">Week days</td>
-              <td class="c-table__body__col">
-                19/04/2019
-
-                <span class="u-text--darkgrey">
-                  00:29AM
-                </span>
-              </td>
-              <td class="c-table__body__col c-table__body__col--hidden">
-                <i class="fa fa-trash"></i>
-              </td>
-            </tr>
+          <tbody class="c-biker-list__records">
+            <template id="biker-row-template">
+              <tr class="c-table__row c-table__row--striped c-biker">
+                <td class="c-table__body__col c-biker__name"></td>
+                <td class="c-table__body__col c-biker__email"></td>
+                <td class="c-table__body__col c-biker__city"></td>
+                <td class="c-table__body__col c-biker__rideInGroups"></td>
+                <td class="c-table__body__col c-biker__frequency"></td>
+                <td class="c-table__body__col">
+                  <span class="c-biker__createdAtDate"></span>
+                  <span class="u-text--darkgrey c-biker__createdAtTime"></span>
+                </td>
+                <td class="c-table__body__col c-table__body__col--hidden c-biker__trash">
+                  <i class="fa fa-trash"></i>
+                </td>
+              </tr>
+            </template>
           </tbody>
         </table>
       </div>

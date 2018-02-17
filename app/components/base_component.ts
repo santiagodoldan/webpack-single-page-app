@@ -13,6 +13,29 @@ export class BaseComponent {
     })
   }
 
+  public static appendTemplateToById(container: HTMLElement, id: string): HTMLElement {
+    const identifier = Math.round(Math.random() * 10000000)
+    const template   = this.getTemplateById(id).content
+
+    template
+      .firstElementChild
+      .setAttribute("componentid", identifier.toString())
+
+    container.appendChild(template)
+
+    return container.querySelector(`[componentid="${identifier}"]`)
+  }
+
+  public static getTemplateById(id: string): HTMLTemplateElement {
+    const template = document.querySelector(`#${id}`).cloneNode(true) as HTMLTemplateElement
+
+    if (!template) {
+      throw new Error(`Missing template ${id}`)
+    }
+
+    return template
+  }
+
   public node: HTMLElement
 
   public constructor(node: HTMLElement) {
